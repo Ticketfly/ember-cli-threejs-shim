@@ -1,6 +1,6 @@
 # ember-cli-threejs-shim
 
-This README outlines the details of collaborating on this Ember addon.
+Ember-CLI shims - ES6 accessible module for threejs.
 
 ## Installation
 
@@ -8,6 +8,24 @@ This README outlines the details of collaborating on this Ember addon.
 * `cd ember-cli-threejs-shim`
 * `npm install`
 * `bower install`
+
+## Usage
+Once `ember-cli-threejs-shim` has been installed through `npm install`, you can import ThreeJS shims as ES6 modules
+
+Import global `THREE`:
+
+```javascript
+import THREE from 'threejs';
+```
+
+Or import other named exported modules:
+
+```javascript
+import Geometry, { BoxGeometry } from 'threejs-geometry';
+import BufferGeometry, { BoxBufferGeometry } from 'threejs-geometry/buffer';
+import { Vector2, Vector3 } from 'threejs-math/vector';
+import Object3D, { Mesh, Group } from 'threejs-object';
+```
 
 ## Running
 
