@@ -18,7 +18,8 @@
     "test": "ember try:each"
   },
   "dependencies": {
-    "ember-cli-babel": "^5.1.7"
+    "ember-cli-babel": "^5.1.7",
+    "three": "0.84.0"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
@@ -43,8 +44,7 @@
     "ember-resolver": "^2.0.3",
     "ember-source": "~2.11.0",
     "ember-welcome-page": "^2.0.2",
-    "loader.js": "^4.0.10",
-    "three": "0.84.0"
+    "loader.js": "^4.0.10"
   },
   "engines": {
     "node": ">= 0.12.0"
