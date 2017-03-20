@@ -27,6 +27,7 @@ import { Vector2, Vector3 } from 'threejs-math/vector';
 import Object3D, { Mesh, Group } from 'threejs-object';
 ```
 
+Full list of shims could be found in [threejs-shim.js](https://github.com/Ticketfly/ember-cli-threejs-shim/blob/master/vendor/threejs-shim.js)
 ## Running
 
 * `ember serve`
