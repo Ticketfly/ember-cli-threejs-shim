@@ -1,3 +1,4 @@
+/* global THREE, define */
 (function() {
   var shims = {
     'threejs': {
