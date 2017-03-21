@@ -1,5 +1,5 @@
 (function() {
-  const shims = {
+  var shims = {
     'threejs': {
       'default': THREE
     },
@@ -248,9 +248,7 @@
     });
   }
 
-  const shimEntries = Object.entries(shims);
-
-  for (let [name, value] of shimEntries) {
-    generateModule(name, value)
+  for (var name in shims) {
+    generateModule(name, shims[name]);
   }
 })();
