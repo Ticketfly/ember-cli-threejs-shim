@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-threejs-shim",
-  "version": "84.0.0",
+  "version": "85.0.0",
   "description": "The default blueprint for ember-cli addons.",
   "keywords": [
     "ember-addon"
@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "ember-cli-babel": "^5.1.7",
-    "three": "0.84.0"
+    "three": "~0.85.0"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
