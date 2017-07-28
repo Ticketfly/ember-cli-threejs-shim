@@ -11,19 +11,13 @@ module.exports = {
 
   included(app) {
     this._super.included.apply(this, arguments);
-    // Ensures that imports work for nested addons and engines
-    // @see: https://github.com/ember-cli/ember-cli/issues/3718
 
-    while (typeof app.import !== 'function' && app.app) {
-      app = app.app;
-    }
-
-    app.import({
+    this.import({
       development: 'vendor/threejs-src/three.js',
       production: 'vendor/threejs-src/three.min.js'
     });
 
-    app.import('vendor/threejs-shim.js');
+    this.import('vendor/threejs-shim.js');
   },
 
   treeForVendor(vendorTree) {
